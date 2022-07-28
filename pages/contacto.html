@@ -36,61 +36,25 @@
         </nav>
     </header>
 
-    <main>
-            <section class="area-contacto">
-        <h2 class="consultas-fieldset">Consultas</h2>
-        
-        <form>
-            <fieldset>
-                <legend class="datos-personales"> Ingresa tus datos personales</legend>
-            <div>
-                <label for="Nombre"> Nombre y Apellido</label>
-                <input type="text" id="Nombre" placeholder="Nombre completo" required>
-            </div>
-    
-            <div>
-                <label for="Email"> Correo</label>        
-                <input type="email" id="Correo" placeholder="Ingresa tu email">
-            </div>
-    
-            <div>
-                <label for="telefono"> Teléfono</label>
-                <input type="tel" id="Teléfono" placeholder="Ingresa tu teléfono">
-        
-            </div>
-    
-            <div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa tu consulta"></textarea>
-            </div>
-    
-            <p>Género</p>
-            <label for="hombre">Hombre</label>
-            <input type="radio" name="genero" id="hombre">
-    
-            <label for="mujer">Mujer</label>
-            <input type="radio" name="genero" id="mujer">
-    
-            <label for="otro">Otro</label>
-            <input type="radio" name="genero" id="otro">
-    
-            <div>
-    
-            <label for="desplegavle"></label>
-            <select id="">
-                <option value="">Info de cursos</option>
-                <option value="">Compra de insumos</option>
-            </div>
-            </select>
-    
-            <div>
-    
-            <input type="submit" value="Enviame tu consulta!">
-    
-            <input type="reset" value="Limpiar">
+    <main class="formulario container center m-4">
+
+        <h1>Formulario de contacto</h1>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
-        </fieldset>
-        </form>
-    </section>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre por favor">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ingresa tu consulta aquí" rows="3"></textarea>
+        </div>
+
+        <button class="btn btn-primary m-4">Enviar</button>
     </main>
 
     <footer class="text-center pt-4">
